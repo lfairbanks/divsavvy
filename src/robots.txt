@@ -1,0 +1,2 @@
+Sitemap: http://localhost:866/trafficbasedsspdeltasitemap.xml
+Sitemap: http://localhost:866/trafficbasedsspsitemap.xml

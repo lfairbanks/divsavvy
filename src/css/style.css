@@ -1,0 +1,21 @@
+.testing {
+  width: 71.42857%; }
+
+.nav-link {
+  font-family: 'Lobster', cursive; }
+
+h1 {
+  font-family: 'Lobster', cursive !important;
+  color: #fff !important;
+  text-shadow: 4px 4px 4px #000; }
+
+.text-shadow-one {
+  text-shadow: 2px 2px 6px #999999 !important; }
+
+.text-shadow-two {
+  text-shadow: 2px 2px 6px #0bd7e6 !important; }
+
+.selector-for-some-widget {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }

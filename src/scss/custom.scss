@@ -1,0 +1,14 @@
+// custom.scss - Bootstrap customizations
+//color variable edits
+$green: #d9ff00;
+$brand-primary: $green;
+$link-color: $green;
+$body-bg: #3a3a3a;
+$text-color: rgb(212, 50, 50); 
+//$body-color: #000000;//Default font color
+
+//fonts
+$font-family-sans-serif: "Raleway", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family: 'Lobster', cursive;
+//nothing but import
+@import "node_modules/bootstrap/scss/bootstrap"; 
