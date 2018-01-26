@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "fs-finder": "^1.8.1",
     "jquery": "^3.2.1",
     "popper.js": "^1.12.9"
   },
