@@ -4,13 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "fs-finder": "^1.8.1",
     "jquery": "^3.2.1",
     "popper.js": "^1.12.9"
   },
   "devDependencies": {
     "bootstrap": "^4.0.0",
     "browser-sync": "^2.18.13",
+    "fs-finder": "^1.8.1",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.0",
     "gulp-connect-php": "^1.0.1",
