@@ -26,7 +26,8 @@ gulp.task('js', function () {
 gulp.task('connect-sync', function () {
   connect.server({}, function () {
     browserSync.init({
-      proxy: 'localhost:8000'  
+      proxy: 'localhost:8000',
+      port:8000  
     });
     gulp.watch('*src/*.php').on('change', function () { browserSync.reload(); });
     gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
