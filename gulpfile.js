@@ -21,13 +21,12 @@ gulp.task('js', function () {
     .pipe(gulp.dest("src/js"))
     .pipe(browserSync.stream());
 });
-
 //PHP - Server Creation
 gulp.task('connect-sync', function () {
   connect.server({}, function () {
     browserSync.init({
-      proxy: 'localhost:8000',
-      port:8000  
+      proxy: 'localhost:8082',
+      port:8082  
     });
     gulp.watch('*src/*.php').on('change', function () { browserSync.reload(); });
     gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
@@ -38,12 +37,15 @@ gulp.task('connect-sync', function () {
   }); 
 });
 //clean css 
-gulp.task('minify-css', () => {
-  return gulp.src('src/css/*.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
+gulp.task('minify-css',() => {
+  return gulp.src('./src/css/*.css')
+    .pipe(sourcemaps.init())
+    //.pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(cleanCSS())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('src/dist/css/'));
 });
-  // folders
+// folders
   folder = {
     src: 'src/assets/',
     dist: 'src/dist/assets/'

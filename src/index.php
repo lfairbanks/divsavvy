@@ -67,7 +67,7 @@
             <div class="row">
                 <h1 class="text-sm-left text-shadow-two ">
                     <?php echo 'Earthlings Beware'; ?> </h1>
-            </div>
+            </div>   
 
             <div class="card-deck">
                 <div class="card">
@@ -75,7 +75,7 @@
                     <div class="card-body">
                         <h4 class="card-title">Start a new Git repository </h4>
                         <p class="card-text"><ul>
-
+  
 $ cd /path/to/my/codebase
 <li class="list-group-item title">git init      (1)</li>
 <li class="list-group-item active">git init      (1)</li>
