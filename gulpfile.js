@@ -5,6 +5,7 @@ var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
 var newer = require('gulp-newer');
 var imagemin = require('gulp-imagemin');
+var sourcemaps = require('gulp-sourcemaps');  
 
 
 // Compile sass into CSS & auto-inject into browsers
@@ -38,7 +39,7 @@ gulp.task('connect-sync', function () {
 });
 //clean css 
 gulp.task('minify-css',() => {
-  return gulp.src('./src/css/*.css')
+  return gulp.src('src/css/*.css')
     .pipe(sourcemaps.init())
     //.pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(cleanCSS())
