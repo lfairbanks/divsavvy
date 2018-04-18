@@ -1,4 +1,18 @@
 {
+    "name": "divsavvy/divsavvy",
+    "type": "website",
+    "description": "Divsavvy Website",
+    "keywords": ["divsavvy","divsavvy.com"],
+    "homepage": "https://github.com/divsavvy/divsavvy",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lee Fairbanks",
+            "email": "publicfairbanks@gmail.com",
+            "homepage": "http://www.divsavvy.com",
+            "role": "Designer/Developer"
+        }
+    ],
     "require": {
         "twbs/bootstrap": "4.1.0"
     }
