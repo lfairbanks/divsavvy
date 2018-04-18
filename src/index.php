@@ -68,7 +68,7 @@
                 <h1 class="text-sm-left text-shadow-two ">
                     <?php echo 'Earthlings Beware'; ?> </h1>
             </div>   
-
+ 
             <div class="card-deck">
                 <div class="card">
                     <img class="card-img-top" src="assets/images/2016Featured/400x400-25PercentEvery013b.jpg" alt="Card image cap">
