@@ -66,7 +66,7 @@
         <div class="jumbotron">
             <div class="row">
                 <h1 class="text-sm-left text-shadow-two ">
-                    <?php echo 'Earthlings Beware'; ?> </h1>
+                    <?php echo 'Surrender Earthlings'; ?> </h1>
             </div>   
  
             <div class="card-deck">
