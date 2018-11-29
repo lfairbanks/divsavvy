@@ -10,7 +10,8 @@ var sourcemaps = require('gulp-sourcemaps');
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function () {
-  return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/style.scss', 'src/scss/custom.scss'])
+  //return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/style.scss', 'src/scss/custom.scss'])
+  return gulp.src(['vendor/twbs/bootstrap/scss/bootstrap.scss', 'src/scss/style.scss', 'src/scss/custom.scss'])
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest("src/css"))
     .pipe(browserSync.stream());
@@ -18,7 +19,8 @@ gulp.task('sass', function () {
 
 // Move the Node Module javascript files into the /src/js folder
 gulp.task('js', function () {
-  return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.bundle.min.js', 'node_modules/jquery/dist/jquery.min.js'])
+  //return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.bundle.min.js', 'node_modules/jquery/dist/jquery.min.js'])
+  return gulp.src(['vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js', 'node_modules/jquery/dist/jquery.min.js'])
     .pipe(gulp.dest("src/js"))
     .pipe(browserSync.stream());
 });
@@ -26,11 +28,12 @@ gulp.task('js', function () {
 gulp.task('connect-sync', function () {
   connect.server({}, function () {
     browserSync.init({
-      proxy: 'localhost:8082',
+      proxy: 'localhost:8082', 
       port:8082  
     });
     gulp.watch('*src/*.php').on('change', function () { browserSync.reload(); });
-    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
+    gulp.watch(['vendor/twbs/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
+    //gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
     gulp.watch([]); 
     gulp.watch('src/js/*.js').on('change', function () { browserSync.reload(); });
     //gulp.watch('gulpfile.js').on('change', function () { browserSync.reload(); });
