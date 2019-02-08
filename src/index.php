@@ -22,7 +22,7 @@
         <div class="row">
             <nav class="navbar navbar-expand-md navbar-dark">
                 <a class="navbar-brand text-shadow-one {
-" href="#">DivSavvy.com</a>
+" href="#">DivSavvy.com< You Bet/a>
                 <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
