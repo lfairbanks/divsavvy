@@ -5,7 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "clean-css": "^4.1.11",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "moment": "^2.22.1",
     "popper.js": "^1.12.9"
   },
